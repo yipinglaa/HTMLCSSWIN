@@ -53,17 +53,18 @@ $secondtextcolor:#747474;
 $highlightcolor:#56C4C5;
 $font-s:16px;
 
-.body{
-    width: 1085px;
-}
+
 .header{
-    width: 1085px;
+    max-width: 1366px;
+    padding: 0 140px;
     height: 559px;
     margin: 0 auto;
     background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner.svg");
     background-repeat: no-repeat;
     background-position: right 0;
     background-size: 885px;
+    background-color: #F7F9FD;
+    border-radius: 0px 0px 0px 300px;
 }
 .navbar{
 	margin: 0 auto;
@@ -91,7 +92,7 @@ $font-s:16px;
 }
 
 .main{
-    width: 1085px;
+    max-width: 1366px;
     margin: 0 auto;
 }
 //banner
@@ -100,6 +101,7 @@ $font-s:16px;
     h1{
         font-size: 48px;
         color: $maintextcolor;
+        font-weight: bold;
         margin-bottom: 16px;
     }
     p{
@@ -111,10 +113,10 @@ $font-s:16px;
 //program
 .program{
     text-align: center;
-    width: 909px;
     margin: 0 auto;
     h2{
         font-size: 32px;
+        font-weight: bold;
         color: $maintextcolor;
         margin-bottom: 48px;
     }
@@ -148,6 +150,7 @@ $font-s:16px;
         }
         h3{//基本版 標準版
             font-size: 24px;
+            font-weight: bold;
             color: $maintextcolor;
             padding-top: 16px;
             padding-bottom: 16px;
@@ -240,6 +243,7 @@ $font-s:16px;
     margin-bottom: 100px;
     h2{
         font-size: 32px;
+        font-weight: bold;
         color: $maintextcolor;
         margin-bottom: 48px;
         text-align: center;
@@ -255,7 +259,13 @@ $font-s:16px;
             justify-content: space-between;
             .qtext{
                 font-size: 18px;
+                font-weight: bold;
                 color: $maintextcolor;
+            }
+            .qtext_open{
+                font-size: 18px;
+                font-weight: bold;
+                color: $highlightcolor;
             }
         }
         .answer{
