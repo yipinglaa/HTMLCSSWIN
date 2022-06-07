@@ -59,12 +59,18 @@ table {
 
 .container {
   max-width: 1366px;
+  padding: 0 140px;
   margin: 0 auto;
+}
+
+@media (max-width: 376px) {
+  .container {
+    padding: 0 20px;
+  }
 }
 
 .header {
   height: 100%;
-  padding: 0 140px;
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg");
   background-repeat: no-repeat;
   background-position: right top;
@@ -353,6 +359,11 @@ table {
     padding-left: 20px;
     padding-bottom: 32px;
   }
+  .part3 ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .part3 li {
     margin: 0 auto;
     margin-bottom: 24px;
@@ -377,7 +388,7 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 58.3%;
+  width: 58%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -433,6 +444,10 @@ table {
   padding-bottom: 48px;
 }
 
+.part4 .functiontext {
+  text-align: center;
+}
+
 .part4 .functiontext h2 {
   font-size: 32px;
   font-weight: bold;
@@ -459,27 +474,28 @@ table {
 @media (max-width: 376px) {
   .part4 {
     margin: 0 auto;
-    margin-bottom: 36px;
+    padding-bottom: 36px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .part4 .functiontext {
-    text-align: center;
     margin-bottom: 32px;
   }
-  .part4 .functiontext h2 {
+  .part4 .functioncard {
+    width: 100%;
+  }
+  .part4 h2 {
     font-size: 28px;
   }
-  .part4 .functiontext p {
-    font-size: 16px;
-    margin-bottom: 16px;
+  .part4 p {
+    font-size: 18px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 32px;
   }
-  .part4 .functioncard {
+  .part4 li {
     margin: 0 auto;
-  }
-  .part4 .functioncard li {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    width: 230px;
-    margin: 0px 0px 24px 0px;
     margin-bottom: 24px;
   }
 }
@@ -597,6 +613,7 @@ table {
   margin-bottom: 100px;
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg");
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .part6 h2 {
