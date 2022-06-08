@@ -72,8 +72,9 @@ $font-s:12px;
 	background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg");
 	background-repeat: no-repeat;
 	background-position: right top;
-	
-	@media (max-width:767px){
+}
+@media (max-width:767px){
+	.header{
 		padding: 0px;
 		background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg");
 		background-repeat: no-repeat;
@@ -102,7 +103,10 @@ $font-s:12px;
 		margin-top: 24px;
         margin-bottom: 24px;
 	}
-	@media(max-width: 767px){
+
+}
+@media(max-width: 767px){
+	.navbar{
 		a.logo{
 			display: block;
 			width: 130px;
@@ -320,10 +324,12 @@ $font-s:12px;
 .part4{
 	max-width: 1088px;
 	margin: 0 auto;
-	display: flex;
-	align-items: center;
 	margin-bottom: 100px;
-	flex-wrap: wrap-reverse;
+	.functionbox{
+		display: flex;
+		flex-wrap: wrap-reverse;
+		align-items: center;
+	}
 	.functioncard{
 		display: flex;
 		width: 58%;
